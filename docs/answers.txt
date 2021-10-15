@@ -1,0 +1,48 @@
+GitLab Tutorials: 10/14/2021
+Github Account Setup: Sometime in 2019 most likely
+
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+$ git add .
+
+$ git commit -m "<Added status file to docs folder>"
+
+$ git push origin master
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 1.15 KiB | 587.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/ahabib1999/assignment2.git
+   f4975e5..754e2bb  master -> master
+
+Total commits: 9
+Command: $ git shortlog -sn --all
+
+File Last Modified On: Thu, Oct 14, 2021  6:55:51 PM
+Command: $ date -r README.md
+
+Branches give you the freedom to independently work on different modules and merge the modules when you finish developing them. Branches make it harder for unstable
+code to be part of the main stable code so there's always a functional version of the project available to revert to.
+
+The git log command displays committed snapshots. It lets you list the project history, filter it, and search for specific changes. While git status lets you inspect 
+the working directory and the staging area, git log only operates on the committed history.
+
+$ git log -- "./Vehicle.h"
+
+$ git log --grep="file"
+
+Inheritance is the procedure in which one class inherits the attributes and methods of another class. Polymorphism is the characteristic of being able to assign a 
+different meaning or usage to something in different contexts - specifically, to allow an entity such as a variable, a function, or an object to have more than one 
+form. Encapsulation refers to the bundling of data, along with the methods that operate on that data, into a single unit.
+
+The Integration Manager worflow has centralized integration whereas the Dictator and Lieutenants workflow has distributed integration
+
+The developers would benefit because the Dictator and Lieutenants workflow allows them to pull the latest conflict-free repo and make their changes. After making their
+changes, the devs can just push their changes to the assigned Lieutenant repo who would the resolve some conflicts and merge changesfor some devs before the dictator 
+merges changes from all devs and solves any remaining conflicts and pushes to the central repo. The devs can make changes without having to worry about conflicts.  
